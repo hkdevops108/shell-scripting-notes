@@ -222,22 +222,6 @@ command1  # This command does something
 ```
 
 ---
-✅ Method 2: Using : << COMMENT (Here Document Trick)
-
-This is a common workaround:
-
-: << COMMENT
-This is a multi-line comment
-It can span multiple lines
-Nothing here will execute
-COMMENT
-🔍 How It Works
-
-: is a built-in command that does nothing (null command)
-
-<< COMMENT creates a here-document
-
-Everything until COMMENT is ignored
 
 # Variables in Shell Scripting
 
@@ -254,7 +238,22 @@ Variables are used to store data or values that can be referenced and manipulate
 * Case-sensitive
 
 ---
+✅ Method 2: Using Here-Document Trick (: << COMMENT)
 
+We can simulate multiline comments using a here-document.
+
+: << COMMENT
+This is a multi-line comment
+It can span multiple lines
+Nothing inside this block will execute
+COMMENT
+🔎 How It Works
+
+: is a built-in null command (does nothing).
+
+<< COMMENT starts a here-document.
+
+Everything until COMMENT is ignored.
 ## Variable Assignment
 
 ```
