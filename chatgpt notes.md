@@ -222,6 +222,22 @@ command1  # This command does something
 ```
 
 ---
+✅ Method 2: Using : << COMMENT (Here Document Trick)
+
+This is a common workaround:
+
+: << COMMENT
+This is a multi-line comment
+It can span multiple lines
+Nothing here will execute
+COMMENT
+🔍 How It Works
+
+: is a built-in command that does nothing (null command)
+
+<< COMMENT creates a here-document
+
+Everything until COMMENT is ignored
 
 # Variables in Shell Scripting
 
