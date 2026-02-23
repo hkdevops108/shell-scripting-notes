@@ -221,6 +221,14 @@ command1  # This command does something
 # Line 3
 ```
 
+### Multi-line comment method 2
+```
+: << COMMENT
+This is a multi-line comment
+It can span multiple lines
+Nothing inside this block will execute
+COMMENT
+```
 ---
 
 # Variables in Shell Scripting
@@ -238,22 +246,7 @@ Variables are used to store data or values that can be referenced and manipulate
 * Case-sensitive
 
 ---
-✅ Method 2: Using Here-Document Trick (: << COMMENT)
 
-We can simulate multiline comments using a here-document.
-
-: << COMMENT
-This is a multi-line comment
-It can span multiple lines
-Nothing inside this block will execute
-COMMENT
-🔎 How It Works
-
-: is a built-in null command (does nothing).
-
-<< COMMENT starts a here-document.
-
-Everything until COMMENT is ignored.
 ## Variable Assignment
 
 ```
