@@ -104,3 +104,8 @@ bash-string-checks.md
 
 If you want, I can also give you a **complete Bash conditional operators `.md` cheat sheet** (`-f`, `-d`, `-e`, `$?`, etc.) which is **very useful for DevOps scripts**.
 ```
+
+Important Concept
+Syntax	Purpose
+$()	Run a command
+$(( ))	Do mathematical calculation
